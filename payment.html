@@ -1,0 +1,170 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.4/tailwind.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
+    <title>Shop Name</title>
+</head>
+
+<body class="antialiased bg-gray-200 bg-cover" style="font-family: Nunito;">
+    <div class="w-screen h-screen ">
+        <!--Navbar-->
+        <nav
+            class="z-50 flex flex-row items-center justify-between w-screen px-6 py-3 bg-white md:py-6 md:px-20 lg:px-32">
+            <div class="flex justify-start space-x-3 lg:space-x-10">
+                <a href="user-landing.html" class="flex flex-row items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <span class="hidden text-xl font-bold lg:block">Logo</span>
+                </a>
+                <div class="flex items-center justify-center hidden space-x-3 lg:space-x-10 md:block">
+                    <a href="user-landing.html" class="text-gray-500 hover:underline hover:text-gray-700">
+                        <span>Home</span>
+                    </a>
+                    <a href="products.html" class="text-gray-500 hover:underline hover:text-gray-700">
+                        <span>Products</span>
+                    </a>
+                    <a href="aboutus.html" class="text-gray-500 hover:underline hover:text-gray-700">
+                        <span>About Us</span>
+                    </a>
+                    <a href="contactus.html" class="text-gray-500 hover:underline hover:text-gray-700">
+                        <span>Contact Us</span>
+                    </a>
+                </div>
+            </div>
+            <div class="flex flex-wrap justify-end space-x-6">
+                <a href="cart.html" class="hidden md:block">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                    </svg>
+                </a>
+                <div class="hidden md:block">
+                    <a href="profile-settings.html" class="text-gray-500 hover:underline hover:text-gray-700">
+                        <span>Profile Settings</span>
+                    </a>
+                </div>
+                <div class="block md:hidden">
+                    <button class="flex block p-3 ml-auto md:hidden navbtn" data-target="#navigation"
+                        onClick="toggleElement('navigation')">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <div id="navigation" class="hidden px-6 bg-white">
+            <div class="flex flex-col">
+                <a href="user-landing.html"
+                    class="px-3 py-2 text-gray-500 md:w-auto hover:underline hover:text-gray-700">
+                    <span>Home</span>
+                </a>
+                <a href="products.html" class="px-3 py-2 text-gray-500 md:w-auto hover:underline hover:text-gray-700">
+                    <span>Products</span>
+                </a>
+                <a href="aboutus.html" class="px-3 py-2 text-gray-500 md:w-auto hover:underline hover:text-gray-700">
+                    <span>About Us</span>
+                </a>
+                <a href="contactus.html" class="px-3 py-2 text-gray-500 md:w-auto hover:underline hover:text-gray-700">
+                    <span>Contact Us</span>
+                </a>
+                <a href="#" class="px-3 py-2 text-gray-500 md:w-auto hover:underline hover:text-gray-700">
+                    <span>Cart</span>
+                </a>
+                <a href="profile-settings.html"
+                    class="px-3 py-2 text-gray-500 md:w-auto hover:underline hover:text-gray-700">
+                    <span>Profile Settings</span>
+                </a>
+            </div>
+        </div>
+        <!--navbar-->
+
+        <!--mainContent-->
+        <div class="w-auto h-auto p-6 mt-8 bg-white md:rounded-lg md:mx-20 lg:mx-32">
+            <div class="flex items-center justify-center ">
+                <h1 class="mb-6 text-3xl font-bold text-black md:mb-10 md:text-4xl lg:tracking-widest">ADDRESS/CONTACT
+                </h1>
+            </div>
+
+            <div class="mt-4">
+                <label for="house" class="block text-lg text-gray-500">House No., Street</label>
+                <input id="house" type="text" class="w-full h-8 px-2 bg-gray-200 border border-black rounded-md "
+                    required />
+            </div>
+
+            <div class="mt-4">
+                <label for="province" class="block text-lg text-gray-500">Province</label>
+                <select name="province" id="province"
+                    class="w-full h-8 px-2 bg-gray-200 border border-black rounded-md ">
+                    <option value="1">Province List here</option>
+                </select>
+            </div>
+
+            <div class="mt-4">
+                <label for="city" class="block text-lg text-gray-500">City</label>
+                <select name="city" id="city" class="w-full h-8 px-2 bg-gray-200 border border-black rounded-md ">
+                    <option value="1">City List here</option>
+                </select>
+            </div>
+
+            <div class="mt-4">
+                <label for="brgy" class="block text-lg text-gray-500">Barangay</label>
+                <select name="brgy" id="brgy" class="w-full h-8 px-2 bg-gray-200 border border-black rounded-md ">
+                    <option value="1">Barangay List here</option>
+                </select>
+            </div>
+
+            <div class="flex flex-col justify-start md:justify-center md:flex-row md:space-x-56">
+                <div class="flex flex-col mt-4">
+                    <label for="postal" class="block text-lg text-gray-500">Postal Code</label>
+                    <input id="postal" type="text" class="w-full h-8 px-2 bg-gray-200 border border-black rounded-md "
+                        required />
+                </div>
+                <div class="flex flex-col mt-4">
+                    <label for="number" class="block text-lg text-gray-500">Contact Number</label>
+                    <input id="number" type="text" class="w-full h-8 px-2 bg-gray-200 border border-black rounded-md "
+                        required />
+                </div>
+            </div>
+
+            <hr class="my-2 border-t border-black md:mx-72">
+
+            <div class="flex items-center justify-center mt-4">
+                <h1 class="text-3xl font-bold text-black md:text-4xl lg:tracking-widest">Payment Method
+                </h1>
+            </div>
+
+            <div class="flex flex-col justify-start text-black md:space-x-10 md:justify-center md:flex-row">
+                <div class="flex flex-row mt-4 space-x-2">
+                    <input type="radio" class="w-5 h-5 text-black" name="type" id="radio2" checked>
+                    <label for="radio2" class="block text-lg">Debit/Credit</label>
+                </div>
+                <div class="flex flex-row mt-4 space-x-2">
+                    <input type="radio" class="w-5 h-5 text-black" name="type" id="radio1">
+                    <label for="radio1" class="block text-lg">Cash on Delivery</label>
+                </div>
+            </div>
+
+            <div class="flex items-center justify-center mt-4">
+                <a href="payment-card.html"
+                    class="px-20 py-2 font-medium tracking-wide text-white bg-gray-800 border border-gray-700 rounded-lg hover:bg-gray-500 hover:border-gray-600 hover:text-black">Proceed</a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

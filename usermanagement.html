@@ -1,0 +1,181 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.4/tailwind.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
+    <title>Admin</title>
+</head>
+
+<body class="bg-gray-200 bg-cover" style="font-family: Nunito;">
+    <div class="w-screen h-screen ">
+        <!--navbar-->
+        <nav
+            class="z-50 flex flex-row items-center justify-between w-screen px-6 py-3 bg-white md:py-6 md:px-20 lg:px-32">
+            <div class="flex justify-start space-x-10">
+                <a href="landing.html" class="flex flex-row items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <span class="hidden text-xl font-bold md:block">Logo</span>
+                </a>
+                <div class="flex items-center justify-center hidden space-x-10 md:block">
+                    <a href="landing.html" class="text-gray-500 hover:underline hover:text-gray-700">
+                        <span>Home</span>
+                    </a>
+                    <a href="productmanagement.html" class="text-gray-500 hover:underline hover:text-gray-700">
+                        <span>Products</span>
+                    </a>
+                    <a href="usermanagement.html" class="text-gray-500 hover:underline hover:text-gray-700">
+                        <span>Users</span>
+                    </a>
+                </div>
+            </div>
+            <div class="flex flex-wrap justify-end ">
+                <div class="hidden md:block">
+                    <a href="profile-settings.html" class="text-gray-500 hover:underline hover:text-gray-700">
+                        <span>Profile Settings</span>
+                    </a>
+                </div>
+                <div class="block md:hidden">
+                    <button class="flex block p-3 ml-auto md:hidden navbtn" data-target="#navigation"
+                        onClick="toggleElement('navigation')">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <div id="navigation" class="hidden px-6 bg-white">
+            <div class="flex flex-col">
+                <a href="landing.html" class="px-3 py-2 text-gray-500 md:w-auto hover:underline hover:text-gray-700">
+                    <span>Home</span>
+                </a>
+                <a href="productmanagement.html"
+                    class="px-3 py-2 text-gray-500 md:w-auto hover:underline hover:text-gray-700">
+                    <span>Products</span>
+                </a>
+                <a href="usermanagement.html"
+                    class="px-3 py-2 text-gray-500 md:w-auto hover:underline hover:text-gray-700">
+                    <span>Users</span>
+                </a>
+                <a href="profile-settings.html"
+                    class="px-3 py-2 text-gray-500 md:w-auto hover:underline hover:text-gray-700">
+                    <span>Profile Settings</span>
+                </a>
+            </div>
+        </div>
+        <!--/navbar-->
+
+        <!--Main Content-->
+        <div class="flex flex-col justify-center mx-2 mt-56 md:mx-20 lg:mt-72 lg:mx-36">
+            <div class="flex flex-col">
+                <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+                    <div class="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8">
+                        <div class="overflow-hidden border-b border-gray-200 shadow sm:rounded-lg">
+                            <table class="min-w-full divide-y divide-gray-200">
+                                <thead class="bg-gray-50">
+                                    <tr>
+                                        <th scope="col"
+                                            class="px-6 py-3 text-xs font-medium tracking-wider text-left text-gray-500 uppercase">
+                                            Name
+                                        </th>
+                                        <th scope="col"
+                                            class="px-6 py-3 text-xs font-medium tracking-wider text-left text-gray-500 uppercase">
+                                            Account Type
+                                        </th>
+                                        <th scope="col" class="relative px-6 py-3">
+                                            <span class="sr-only">View</span>
+                                        </th>
+                                        <th scope="col" class="relative px-6 py-3">
+                                            <span class="sr-only">Edit</span>
+                                        </th>
+                                        <th scope="col" class="relative px-6 py-3">
+                                            <span class="sr-only">Delete</span>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody class="bg-white divide-y divide-gray-200">
+                                    <tr>
+                                        <td class="px-6 py-4 whitespace-nowrap">
+                                            <div class="flex items-center">
+                                                <div>
+                                                    <div class="text-sm font-medium text-gray-900">
+                                                        Jane Cooper
+                                                    </div>
+                                                    <div class="text-sm text-gray-500">
+                                                        jane.cooper@example.com
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="px-6 py-4 text-sm text-gray-500 whitespace-nowrap">
+                                            Admin
+                                        </td>
+                                        <td class="px-6 py-4 text-sm font-medium text-right whitespace-nowrap">
+                                            <a href="view-user.html"
+                                                class="text-indigo-600 hover:text-indigo-900 hover:underline">View</a>
+                                        </td>
+                                        <td class="px-6 py-4 text-sm font-medium text-right whitespace-nowrap">
+                                            <a href="edit-user.html"
+                                                class="text-green-400 hover:text-green-900 hover:underline">Edit</a>
+                                        </td>
+                                        <td class="px-6 py-4 text-sm font-medium text-right whitespace-nowrap">
+                                            <a href="#"
+                                                class="text-red-600 hover:text-red-900 hover:underline">Delete</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-6 py-4 whitespace-nowrap">
+                                            <div class="flex items-center">
+                                                <div>
+                                                    <div class="text-sm font-medium text-gray-900">
+                                                        Juan Dela Cruz
+                                                    </div>
+                                                    <div class="text-sm text-gray-500">
+                                                        juan.delacruz@example.com
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="px-6 py-4 text-sm text-gray-500 whitespace-nowrap">
+                                            User
+                                        </td>
+                                        <td class="px-6 py-4 text-sm font-medium text-right whitespace-nowrap">
+                                            <a href="view-user.html"
+                                                class="text-indigo-600 hover:text-indigo-900 hover:underline">View</a>
+                                        </td>
+                                        <td class="px-6 py-4 text-sm font-medium text-right whitespace-nowrap">
+                                            <a href="edit-user.html"
+                                                class="text-green-400 hover:text-green-900 hover:underline">Edit</a>
+                                        </td>
+                                        <td class="px-6 py-4 text-sm font-medium text-right whitespace-nowrap">
+                                            <a href="#"
+                                                class="text-red-600 hover:text-red-900 hover:underline">Delete</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center justify-end mt-6">
+                    <button href="add-user.html"
+                        class="px-6 py-1 bg-yellow-400 border border-yellow-600 rounded-lg hover:bg-yellow-300 hover:border-yellow-400">Add
+                        User</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
