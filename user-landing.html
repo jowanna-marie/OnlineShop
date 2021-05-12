@@ -60,283 +60,269 @@
             color: #000;
             /*Set to match the Tailwind colour you want the active one to be */
         }
+
+        @import url(https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.3.45/css/materialdesignicons.min.css);
     </style>
 </head>
 
 <body class="antialiased bg-gray-200 bg-cover" style="font-family: Nunito;">
-    <div class="w-screen h-screen">
-        <!--Navbar-->
-        <nav
-            class="z-50 flex flex-row items-center justify-between w-screen px-6 py-3 bg-white md:py-6 md:px-20 lg:px-32">
-            <div class="flex justify-start space-x-3 lg:space-x-10">
-                <a href="user-landing.html" class="flex flex-row items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                    <span class="hidden text-xl font-bold lg:block">Logo</span>
-                </a>
-                <div class="flex items-center justify-center hidden space-x-3 lg:space-x-10 md:block">
-                    <a href="user-landing.html" class="text-gray-500 hover:underline hover:text-gray-700">
-                        <span>Home</span>
-                    </a>
-                    <a href="products.html" class="text-gray-500 hover:underline hover:text-gray-700">
-                        <span>Products</span>
-                    </a>
-                    <a href="aboutus.html" class="text-gray-500 hover:underline hover:text-gray-700">
-                        <span>About Us</span>
-                    </a>
-                    <a href="contactus.html" class="text-gray-500 hover:underline hover:text-gray-700">
-                        <span>Contact Us</span>
-                    </a>
-                </div>
-            </div>
-            <div class="flex flex-wrap justify-end space-x-3 lg:space-x-6">
-                <a href="cart.html" class="hidden md:block">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-                    </svg>
-                </a>
-                <div class="hidden md:block">
-                    <a href="profile-settings.html" class="text-gray-500 hover:underline hover:text-gray-700">
-                        <span>Profile Settings</span>
-                    </a>
-                </div>
-                <div class="block md:hidden">
-                    <button class="flex block p-3 ml-auto md:hidden navbtn" data-target="#navigation"
-                        onClick="toggleElement('navigation')">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 " fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
-                                d="M4 6h16M4 12h16M4 18h16" />
-                        </svg>
-                    </button>
-                </div>
-            </div>
-        </nav>
-        <div id="navigation" class="hidden px-6 bg-white">
-            <div class="flex flex-col">
-                <a href="user-landing.html"
-                    class="px-3 py-2 text-gray-500 md:w-auto hover:underline hover:text-gray-700">
+    <!--Navbar-->
+    <nav class="z-50 flex flex-row items-center justify-between w-screen px-6 py-3 bg-white md:py-6 md:px-20 lg:px-32">
+        <div class="flex justify-start space-x-3 lg:space-x-10">
+            <a href="user-landing.html" class="flex flex-row items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <span class="hidden text-xl font-bold lg:block">Logo</span>
+            </a>
+            <div class="flex items-center justify-center hidden space-x-3 lg:space-x-10 md:block">
+                <a href="user-landing.html" class="text-gray-500 hover:underline hover:text-gray-700">
                     <span>Home</span>
                 </a>
-                <a href="products.html" class="px-3 py-2 text-gray-500 md:w-auto hover:underline hover:text-gray-700">
+                <a href="products.html" class="text-gray-500 hover:underline hover:text-gray-700">
                     <span>Products</span>
                 </a>
-                <a href="aboutus.html" class="px-3 py-2 text-gray-500 md:w-auto hover:underline hover:text-gray-700">
+                <a href="aboutus.html" class="text-gray-500 hover:underline hover:text-gray-700">
                     <span>About Us</span>
                 </a>
-                <a href="contactus.html" class="px-3 py-2 text-gray-500 md:w-auto hover:underline hover:text-gray-700">
+                <a href="contactus.html" class="text-gray-500 hover:underline hover:text-gray-700">
                     <span>Contact Us</span>
                 </a>
-                <a href="#" class="px-3 py-2 text-gray-500 md:w-auto hover:underline hover:text-gray-700">
-                    <span>Cart</span>
-                </a>
-                <a href="profile-settings.html"
-                    class="px-3 py-2 text-gray-500 md:w-auto hover:underline hover:text-gray-700">
+            </div>
+        </div>
+        <div class="flex flex-wrap justify-end space-x-3 lg:space-x-6">
+            <a href="cart.html" class="hidden md:block">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+            </a>
+            <div class="hidden md:block">
+                <a href="profile-settings.html" class="text-gray-500 hover:underline hover:text-gray-700">
                     <span>Profile Settings</span>
                 </a>
             </div>
-        </div>
-        <!--navbar-->
-
-        <!--mainContent-->
-        <div class="container relative mx-auto carousel" style="max-width:1600px;">
-            <div class="relative w-full overflow-hidden carousel-inner">
-                <!--Slide 1-->
-                <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden=""
-                    checked="checked">
-                <div class="absolute opacity-0 carousel-item" style="height:50vh;">
-                    <div class="flex block w-full h-full pt-6 mx-auto bg-right bg-cover md:pt-0 md:items-center"
-                        style="background-image: url('shopbanner.jpg');">
-
-                        <div class="container mx-auto">
-                            <div
-                                class="flex flex-col items-center w-full px-6 tracking-wide lg:w-1/2 md:ml-16 md:items-start">
-                                <p class="my-4 text-2xl text-black">Stripy Zig Zag Jigsaw Pillow and Duvet Set</p>
-                                <a class="inline-block text-xl leading-relaxed no-underline border-b border-gray-600 hover:text-black hover:border-black"
-                                    href="#">view product</a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <label for="carousel-3"
-                    class="absolute inset-y-0 left-0 z-10 hidden w-10 h-10 my-auto ml-2 text-3xl font-bold leading-tight text-center text-black bg-white rounded-full cursor-pointer prev control-1 md:ml-10 hover:text-white hover:bg-gray-900">‹</label>
-                <label for="carousel-2"
-                    class="absolute inset-y-0 right-0 z-10 hidden w-10 h-10 my-auto mr-2 text-3xl font-bold leading-tight text-center text-black bg-white rounded-full cursor-pointer next control-1 md:mr-10 hover:text-white hover:bg-gray-900">›</label>
-
-                <!--Slide 2-->
-                <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
-                <div class="absolute bg-right bg-cover opacity-0 carousel-item" style="height:50vh;">
-                    <div class="flex block w-full h-full pt-6 mx-auto bg-right bg-cover md:pt-0 md:items-center"
-                        style="background-image: url('https://images.unsplash.com/photo-1533090161767-e6ffed986c88?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjM0MTM2fQ&auto=format&fit=crop&w=1600&q=80');">
-
-                        <div class="container mx-auto">
-                            <div
-                                class="flex flex-col items-center w-full px-6 tracking-wide lg:w-1/2 md:ml-16 md:items-start">
-                                <p class="my-4 text-2xl text-black">Real Bamboo Wall Clock</p>
-                                <a class="inline-block text-xl leading-relaxed no-underline border-b border-gray-600 hover:text-black hover:border-black"
-                                    href="#">view product</a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <label for="carousel-1"
-                    class="absolute inset-y-0 left-0 z-10 hidden w-10 h-10 my-auto ml-2 text-3xl font-bold leading-tight text-center text-black bg-white rounded-full cursor-pointer prev control-2 md:ml-10 hover:text-white hover:bg-gray-900">‹</label>
-                <label for="carousel-3"
-                    class="absolute inset-y-0 right-0 z-10 hidden w-10 h-10 my-auto mr-2 text-3xl font-bold leading-tight text-center text-black bg-white rounded-full cursor-pointer next control-2 md:mr-10 hover:text-white hover:bg-gray-900">›</label>
-
-                <!--Slide 3-->
-                <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
-                <div class="absolute opacity-0 carousel-item" style="height:50vh;">
-                    <div class="flex block w-full h-full pt-6 mx-auto bg-bottom bg-cover md:pt-0 md:items-center"
-                        style="background-image: url('https://images.unsplash.com/photo-1519327232521-1ea2c736d34d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1600&q=80');">
-
-                        <div class="container mx-auto">
-                            <div
-                                class="flex flex-col items-center w-full px-6 tracking-wide lg:w-1/2 md:ml-16 md:items-start">
-                                <p class="my-4 text-2xl text-black">Brown and blue hardbound book</p>
-                                <a class="inline-block text-xl leading-relaxed no-underline border-b border-gray-600 hover:text-black hover:border-black"
-                                    href="#">view product</a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <label for="carousel-2"
-                    class="absolute inset-y-0 left-0 z-10 hidden w-10 h-10 my-auto ml-2 text-3xl font-bold leading-tight text-center text-black bg-white rounded-full cursor-pointer prev control-3 md:ml-10 hover:text-white hover:bg-gray-900">‹</label>
-                <label for="carousel-1"
-                    class="absolute inset-y-0 right-0 z-10 hidden w-10 h-10 my-auto mr-2 text-3xl font-bold leading-tight text-center text-black bg-white rounded-full cursor-pointer next control-3 md:mr-10 hover:text-white hover:bg-gray-900">›</label>
-
-                <!-- Add additional indicators for each slide-->
-                <ol class="carousel-indicators">
-                    <li class="inline-block mr-3">
-                        <label for="carousel-1"
-                            class="block text-4xl text-gray-400 cursor-pointer carousel-bullet hover:text-gray-900">•</label>
-                    </li>
-                    <li class="inline-block mr-3">
-                        <label for="carousel-2"
-                            class="block text-4xl text-gray-400 cursor-pointer carousel-bullet hover:text-gray-900">•</label>
-                    </li>
-                    <li class="inline-block mr-3">
-                        <label for="carousel-3"
-                            class="block text-4xl text-gray-400 cursor-pointer carousel-bullet hover:text-gray-900">•</label>
-                    </li>
-                </ol>
-
+            <div class="block md:hidden">
+                <button class="flex block p-3 ml-auto md:hidden navbtn" data-target="#navigation"
+                    onClick="toggleElement('navigation')">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 " fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
             </div>
         </div>
-        <!-- <div>
+    </nav>
+    <div id="navigation" class="hidden px-6 bg-white">
+        <div class="flex flex-col">
+            <a href="user-landing.html" class="px-3 py-2 text-gray-500 md:w-auto hover:underline hover:text-gray-700">
+                <span>Home</span>
+            </a>
+            <a href="products.html" class="px-3 py-2 text-gray-500 md:w-auto hover:underline hover:text-gray-700">
+                <span>Products</span>
+            </a>
+            <a href="aboutus.html" class="px-3 py-2 text-gray-500 md:w-auto hover:underline hover:text-gray-700">
+                <span>About Us</span>
+            </a>
+            <a href="contactus.html" class="px-3 py-2 text-gray-500 md:w-auto hover:underline hover:text-gray-700">
+                <span>Contact Us</span>
+            </a>
+            <a href="#" class="px-3 py-2 text-gray-500 md:w-auto hover:underline hover:text-gray-700">
+                <span>Cart</span>
+            </a>
+            <a href="profile-settings.html"
+                class="px-3 py-2 text-gray-500 md:w-auto hover:underline hover:text-gray-700">
+                <span>Profile Settings</span>
+            </a>
+        </div>
+    </div>
+    <!--navbar-->
+
+    <!--mainContent-->
+    <div class="container relative mx-auto carousel" style="max-width:1600px;">
+        <div class="relative w-full overflow-hidden carousel-inner">
+            <!--Slide 1-->
+            <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden=""
+                checked="checked">
+            <div class="absolute opacity-0 carousel-item" style="height:50vh;">
+                <div class="flex block w-full h-full pt-6 mx-auto bg-right bg-cover md:pt-0 md:items-center"
+                    style="background-image: url('menshoes.jpg');">
+
+                    <div class="container mx-auto">
+                        <div
+                            class="flex flex-col items-center w-full px-6 tracking-wide lg:w-1/2 md:ml-16 md:items-start">
+                            <p class="my-4 text-2xl text-black">Men's Shoes</p>
+                            <a class="inline-block text-xl leading-relaxed no-underline border-b border-gray-600 hover:text-black hover:border-black"
+                                href="view-item.html">view product</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <label for="carousel-3"
+                class="absolute inset-y-0 left-0 z-10 hidden w-10 h-10 my-auto ml-2 text-3xl font-bold leading-tight text-center text-black bg-white rounded-full cursor-pointer prev control-1 md:ml-10 hover:text-white hover:bg-gray-900">‹</label>
+            <label for="carousel-2"
+                class="absolute inset-y-0 right-0 z-10 hidden w-10 h-10 my-auto mr-2 text-3xl font-bold leading-tight text-center text-black bg-white rounded-full cursor-pointer next control-1 md:mr-10 hover:text-white hover:bg-gray-900">›</label>
+
+            <!--Slide 2-->
+            <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+            <div class="absolute bg-right bg-cover opacity-0 carousel-item" style="height:50vh;">
+                <div class="flex block w-full h-full pt-6 mx-auto bg-right bg-cover md:pt-0 md:items-center"
+                    style="background-image: url('mensclothes.jpg');">
+
+                    <div class="container mx-auto">
+                        <div
+                            class="flex flex-col items-center w-full px-6 tracking-wide lg:w-1/2 md:ml-16 md:items-start">
+                            <p class="my-4 text-2xl text-black">Men's Classic Clothe</p>
+                            <a class="inline-block text-xl leading-relaxed no-underline border-b border-gray-600 hover:text-black hover:border-black"
+                                href="view-item.html">view product</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <label for="carousel-1"
+                class="absolute inset-y-0 left-0 z-10 hidden w-10 h-10 my-auto ml-2 text-3xl font-bold leading-tight text-center text-black bg-white rounded-full cursor-pointer prev control-2 md:ml-10 hover:text-white hover:bg-gray-900">‹</label>
+            <label for="carousel-3"
+                class="absolute inset-y-0 right-0 z-10 hidden w-10 h-10 my-auto mr-2 text-3xl font-bold leading-tight text-center text-black bg-white rounded-full cursor-pointer next control-2 md:mr-10 hover:text-white hover:bg-gray-900">›</label>
+
+            <!--Slide 3-->
+            <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+            <div class="absolute opacity-0 carousel-item" style="height:50vh;">
+                <div class="flex block w-full h-full pt-6 mx-auto bg-bottom bg-cover md:pt-0 md:items-center"
+                    style="background-image: url('gadgets.jpg');">
+
+                    <div class="container mx-auto">
+                        <div
+                            class="flex flex-col items-center w-full px-6 tracking-wide lg:w-1/2 md:ml-16 md:items-start">
+                            <p class="my-4 text-2xl text-black">Smart Phone</p>
+                            <a class="inline-block text-xl leading-relaxed no-underline border-b border-gray-600 hover:text-black hover:border-black"
+                                href="view-item.html">view product</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <label for="carousel-2"
+                class="absolute inset-y-0 left-0 z-10 hidden w-10 h-10 my-auto ml-2 text-3xl font-bold leading-tight text-center text-black bg-white rounded-full cursor-pointer prev control-3 md:ml-10 hover:text-white hover:bg-gray-900">‹</label>
+            <label for="carousel-1"
+                class="absolute inset-y-0 right-0 z-10 hidden w-10 h-10 my-auto mr-2 text-3xl font-bold leading-tight text-center text-black bg-white rounded-full cursor-pointer next control-3 md:mr-10 hover:text-white hover:bg-gray-900">›</label>
+
+            <!-- Add additional indicators for each slide-->
+            <ol class="carousel-indicators">
+                <li class="inline-block mr-3">
+                    <label for="carousel-1"
+                        class="block text-4xl text-gray-400 cursor-pointer carousel-bullet hover:text-gray-900">•</label>
+                </li>
+                <li class="inline-block mr-3">
+                    <label for="carousel-2"
+                        class="block text-4xl text-gray-400 cursor-pointer carousel-bullet hover:text-gray-900">•</label>
+                </li>
+                <li class="inline-block mr-3">
+                    <label for="carousel-3"
+                        class="block text-4xl text-gray-400 cursor-pointer carousel-bullet hover:text-gray-900">•</label>
+                </li>
+            </ol>
+
+        </div>
+    </div>
+    <!-- <div>
 
             <div class="flex items-center justify-center mx-6 mt-6 md:mx-20 lg:mx-32 ">
                 <img src="shopbanner.jpg" alt="" class="w-full h-auto rounded md:rounded-lg">
             </div> -->
 
-        <div class="flex items-center justify-center mt-6 md:mx-32 ">
-            <h1 class="text-3xl font-bold text-gray-900">Featured Items</h1>
-        </div>
+    <div class="flex items-center justify-center mt-6 md:mx-32 ">
+        <h1 class="text-3xl font-bold text-gray-900">Featured Items</h1>
+    </div>
 
-        <div class="flex items-center py-6 md:mx-20 lg:mx-32">
+    <div class="flex items-center py-6 md:mx-20 lg:mx-32">
 
-            <button class="hidden lg:block">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor" class="align-start">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-                </svg>
-            </button>
 
-            <!--card1-->
+        <!--card1-->
+        <div
+            class="container flex flex-col items-center justify-center lg:space-x-6 lg:mx-32 lg:flex-row lg:mx-auto lg:my-auto">
             <div
-                class="container flex flex-col items-center justify-center md:space-x-6 md:mx-32 md:flex-row md:mx-auto md:my-auto lg:space-x-6">
-                <div
-                    class="w-64 my-5 overflow-hidden transition duration-200 transform bg-white rounded shadow md:w-72 hover:shadow-lg hover:-translate-y-2">
-                    <img src="shoes.jpg" class="object-cover object-center w-full h-48">
-                    <div class="flex flex-col w-full">
-                        <h3 class="w-full mt-1 text-lg font-bold text-center text-black cursor-default">Product
-                            Name
-                        </h3>
-                        <p class="p-3 pt-1 cursor-default">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Amet,
-                            alias?</p>
-                        <a href="products.html"
-                            class="flex items-center justify-center px-3 py-2 mx-6 mb-2 font-medium text-black bg-gray-400 rounded hover:bg-gray-600 focus:outline-none">
-                            Shop Now
+                class="w-64 my-5 overflow-hidden transition duration-200 transform bg-white rounded shadow md:w-72 hover:shadow-lg hover:-translate-y-2">
+                <img src="shoes.jpg" class="object-cover object-center w-full h-48">
+                <div class="flex flex-col w-full">
+                    <h3 class="w-full mt-1 text-lg font-bold text-center text-black cursor-default">Product
+                        Name
+                    </h3>
+                    <p class="p-3 pt-1 cursor-default">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Amet,
+                        alias?</p>
+                    <a href="products.html"
+                        class="flex items-center justify-center px-3 py-2 mx-6 mb-2 font-medium text-black bg-gray-400 rounded hover:bg-gray-600 focus:outline-none">
+                        Shop Now
 
-                            <svg xmlns="http://www.w3.org/2000/svg" class="block w-6 h-6 ml-3 md:hidden lg:block"
-                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-
-                <!--card2-->
-                <div
-                    class="w-64 overflow-hidden transition duration-200 transform bg-white rounded shadow md:w-72 my-54 hover:shadow-lg hover:-translate-y-2">
-                    <img src="shoes.jpg" class="object-cover object-center w-full h-48 md:h-56">
-                    <div class="flex flex-col w-full">
-                        <h3 class="w-full mt-1 text-lg font-bold text-center text-black cursor-default">Product
-                            Name
-                        </h3>
-                        <p class="p-3 pt-1 cursor-default">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Amet,
-                            alias?</p>
-                        <a href="products.html"
-                            class="flex items-center justify-center px-3 py-2 mx-6 mb-2 font-medium text-black bg-gray-400 rounded hover:bg-gray-600 focus:outline-none">
-                            Shop Now
-
-                            <svg xmlns="http://www.w3.org/2000/svg" class="block w-6 h-6 ml-3 md:hidden lg:block"
-                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-
-                <!--card3-->
-                <div
-                    class="w-64 my-5 overflow-hidden transition duration-200 transform bg-white rounded shadow md:w-72 hover:shadow-lg hover:-translate-y-2">
-                    <img src="shoes.jpg" class="object-cover object-center w-full h-48">
-                    <div class="flex flex-col w-full">
-                        <h3 class="w-full mt-1 text-lg font-bold text-center text-black cursor-default">Product
-                            Name
-                        </h3>
-                        <p class="p-3 pt-1 cursor-default">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Amet,
-                            alias?</p>
-                        <a href="products.html"
-                            class="flex items-center justify-center px-3 py-2 mx-6 mb-2 font-medium text-black bg-gray-400 rounded hover:bg-gray-600 focus:outline-none">
-                            Shop Now
-
-                            <svg xmlns="http://www.w3.org/2000/svg" class="block w-6 h-6 ml-3 md:hidden lg:block"
-                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                            </svg>
-                        </a>
-                    </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="block w-6 h-6 ml-3 md:hidden lg:block"
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                    </a>
                 </div>
             </div>
 
-            <button class="hidden lg:block">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor" class="align-end">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                </svg>
-            </button>
+            <!--card2-->
+            <div
+                class="w-64 overflow-hidden transition duration-200 transform bg-white rounded shadow md:w-72 my-54 hover:shadow-lg hover:-translate-y-2">
+                <img src="shoes.jpg" class="object-cover object-center w-full h-48 md:h-56">
+                <div class="flex flex-col w-full">
+                    <h3 class="w-full mt-1 text-lg font-bold text-center text-black cursor-default">Product
+                        Name
+                    </h3>
+                    <p class="p-3 pt-1 cursor-default">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Amet,
+                        alias?</p>
+                    <a href="products.html"
+                        class="flex items-center justify-center px-3 py-2 mx-6 mb-2 font-medium text-black bg-gray-400 rounded hover:bg-gray-600 focus:outline-none">
+                        Shop Now
 
+                        <svg xmlns="http://www.w3.org/2000/svg" class="block w-6 h-6 ml-3 md:hidden lg:block"
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!--card3-->
+            <div
+                class="w-64 my-5 overflow-hidden transition duration-200 transform bg-white rounded shadow md:w-72 hover:shadow-lg hover:-translate-y-2">
+                <img src="shoes.jpg" class="object-cover object-center w-full h-48">
+                <div class="flex flex-col w-full">
+                    <h3 class="w-full mt-1 text-lg font-bold text-center text-black cursor-default">Product
+                        Name
+                    </h3>
+                    <p class="p-3 pt-1 cursor-default">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Amet,
+                        alias?</p>
+                    <a href="products.html"
+                        class="flex items-center justify-center px-3 py-2 mx-6 mb-2 font-medium text-black bg-gray-400 rounded hover:bg-gray-600 focus:outline-none">
+                        Shop Now
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="block w-6 h-6 ml-3 md:hidden lg:block"
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
         </div>
 
     </div>
 
     </div>
+
+
 
     <script src="script.js"></script>
 </body>

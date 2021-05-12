@@ -24,7 +24,7 @@
                     <span class="hidden text-xl font-bold lg:block">Logo</span>
                 </a>
                 <div class="flex items-center justify-center hidden md:space-x-3 lg:space-x-10 md:block">
-                    <a href="user-landing.html" class="text-gray-500 hover:underline hover:text-gray-700">
+                    <a href="user-landing.html" class="text-gray-500 hover:underline hover:text-gray-700 ">
                         <span>Home</span>
                     </a>
                     <a href="products.html" class="text-gray-500 hover:underline hover:text-gray-700">
@@ -91,9 +91,45 @@
 
         <!--Main Content-->
         <div class="pb-10 mt-6 md:mx-20 lg:mx-32">
-
-            <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
-                <div class="flex items-center justify-center p-3 lg:p-10 md:border-r md:border-black">
+            <div
+                class="relative flex items-center h-auto p-5 overflow-hidden bg-white lg:min-h-screen md:rounded-lg min-w-screen lg:p-10">
+                <div
+                    class="relative w-full max-w-6xl p-10 mx-auto text-gray-800 bg-gray-200 rounded shadow-xl lg:p-20 md:text-left">
+                    <div class="items-center -mx-10 md:flex">
+                        <div class="w-full px-10 mb-10 md:w-1/2 md:mb-0">
+                            <div class="relative">
+                                <img src="shoes.jpg" class="relative z-10 w-full" alt="">
+                            </div>
+                        </div>
+                        <div class="w-full px-10 md:w-1/2">
+                            <div class="mb-10">
+                                <h1 class="mb-5 text-2xl font-bold uppercase">Men's Shoes </h1>
+                                <p class="text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing, elit. Eos,
+                                    voluptatum dolorum! Laborum blanditiis consequatur, voluptates, sint enim fugiat
+                                    saepe, dolor fugit, magnam explicabo eaque quas id quo porro dolorum facilis
+                            </div>
+                            <div class="flex flex-row items-center mb-5 space-x-2">
+                                <label for="number" class="text-lg">Qty.:</label>
+                                <input type="number" id="number" name="number"
+                                    class="w-20 p-2 text-gray-700 bg-white border border-black rounded-md" min="1">
+                            </div>
+                            <div>
+                                <div class="inline-block mb-4 mr-5 align-bottom">
+                                    <span class="text-2xl leading-none align-baseline">$</span>
+                                    <span class="text-5xl font-bold leading-none align-baseline">59.99</span>
+                                </div>
+                                <div class="inline-block align-bottom">
+                                    <a href="payment.html"
+                                        class="px-10 py-2 font-semibold text-yellow-900 bg-yellow-300 rounded-full opacity-75 hover:opacity-100 hover:text-gray-900"><i
+                                            class="mr-2 -ml-2 mdi mdi-cart"></i> BUY NOW</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="grid grid-cols-1 gap-6 lg:grid-cols-2">
+                <div class="flex items-center justify-center p-3 lg:p-10 lg:border-r lg:border-black">
                     <img src="shoes.jpg" alt="" class="rounded-lg">
                 </div>
                 <div class="flex flex-col p-4 md:p-10">
@@ -125,7 +161,7 @@
                         </button>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <hr class="mx-2 my-4 border border-black md:mx-0">
 
@@ -133,9 +169,9 @@
                 <div class="mx-6">
                     <label for="reviews" class="block py-4 text-lg text-black">Reviews</label>
                     <textarea id="description" name="description" rows="4" cols="100"
-                        class="hidden w-full px-2 bg-gray-200 border border-black rounded-md md:block"></textarea>
+                        class="hidden w-full px-2 text-gray-900 bg-white border border-black rounded-md md:block"></textarea>
                     <textarea id="description" name="description" rows="4" cols="100"
-                        class="block w-full px-2 mr-20 bg-gray-200 border border-black rounded-md md:hidden"></textarea>
+                        class="block w-full px-2 mr-20 text-gray-900 bg-white border border-black rounded-md md:hidden"></textarea>
                 </div>
             </div>
             <div class="flex items-center justify-start mx-6 mt-4 md:justify-end">
