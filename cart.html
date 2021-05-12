@@ -10,87 +10,85 @@
 </head>
 
 <body class="antialiased bg-gray-200 bg-cover" style="font-family: Nunito;">
-    <div class="w-screen h-screen ">
-        <!--Navbar-->
-        <nav
-            class="z-50 flex flex-row items-center justify-between w-screen px-6 py-3 bg-white md:py-6 md:px-20 lg:px-32">
-            <div class="flex justify-start md:space-x-3 lg:space-x-10">
-                <a href="user-landing.html" class="flex flex-row items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                    <span class="hidden text-xl font-bold lg:block">Logo</span>
-                </a>
-                <div class="flex items-center justify-center hidden md:space-x-3 lg:space-x-10 md:block">
-                    <a href="user-landing.html" class="text-gray-500 hover:underline hover:text-gray-700">
-                        <span>Home</span>
-                    </a>
-                    <a href="products.html" class="text-gray-500 hover:underline hover:text-gray-700">
-                        <span>Products</span>
-                    </a>
-                    <a href="aboutus.html" class="text-gray-500 hover:underline hover:text-gray-700">
-                        <span>About Us</span>
-                    </a>
-                    <a href="contactus.html" class="text-gray-500 hover:underline hover:text-gray-700">
-                        <span>Contact Us</span>
-                    </a>
-                </div>
-            </div>
-            <div class="flex flex-wrap justify-end space-x-6">
-                <a href="cart.html" class="hidden md:block">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-                    </svg>
-                </a>
-                <div class="hidden md:block">
-                    <a href="profile-settings.html" class="text-gray-500 hover:underline hover:text-gray-700">
-                        <span>Profile Settings</span>
-                    </a>
-                </div>
-                <div class="block md:hidden">
-                    <button class="flex block p-3 ml-auto md:hidden navbtn" data-target="#navigation"
-                        onClick="toggleElement('navigation')">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
-                                d="M4 6h16M4 12h16M4 18h16" />
-                        </svg>
-                    </button>
-                </div>
-            </div>
-        </nav>
-        <div id="navigation" class="hidden px-6 bg-white">
-            <div class="flex flex-col">
-                <a href="user-landing.html"
-                    class="px-3 py-2 text-gray-500 md:w-auto hover:underline hover:text-gray-700">
+    <!--Navbar-->
+    <nav class="z-50 flex flex-row items-center justify-between w-screen px-6 py-3 bg-white md:py-6 md:px-20 lg:px-32">
+        <div class="flex justify-start md:space-x-3 lg:space-x-10">
+            <a href="user-landing.html" class="flex flex-row items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <span class="hidden text-xl font-bold lg:block">Logo</span>
+            </a>
+            <div class="flex items-center justify-center hidden md:space-x-3 lg:space-x-10 md:block">
+                <a href="user-landing.html" class="text-gray-500 hover:underline hover:text-gray-700">
                     <span>Home</span>
                 </a>
-                <a href="products.html" class="px-3 py-2 text-gray-500 md:w-auto hover:underline hover:text-gray-700">
+                <a href="products.html" class="text-gray-500 hover:underline hover:text-gray-700">
                     <span>Products</span>
                 </a>
-                <a href="aboutus.html" class="px-3 py-2 text-gray-500 md:w-auto hover:underline hover:text-gray-700">
+                <a href="aboutus.html" class="text-gray-500 hover:underline hover:text-gray-700">
                     <span>About Us</span>
                 </a>
-                <a href="contactus.html" class="px-3 py-2 text-gray-500 md:w-auto hover:underline hover:text-gray-700">
+                <a href="contactus.html" class="text-gray-500 hover:underline hover:text-gray-700">
                     <span>Contact Us</span>
-                </a>
-                <a href="cart.html" class="px-3 py-2 text-gray-500 md:w-auto hover:underline hover:text-gray-700">
-                    <span>Cart</span>
-                </a>
-                <a href="profile-settings.html"
-                    class="px-3 py-2 text-gray-500 md:w-auto hover:underline hover:text-gray-700">
-                    <span>Profile Settings</span>
                 </a>
             </div>
         </div>
-        <!--navbar-->
+        <div class="flex flex-wrap justify-end space-x-6">
+            <a href="cart.html" class="hidden md:block">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+            </a>
+            <div class="hidden md:block">
+                <a href="profile-settings.html" class="text-gray-500 hover:underline hover:text-gray-700">
+                    <span>Profile Settings</span>
+                </a>
+            </div>
+            <div class="block md:hidden">
+                <button class="flex block p-3 ml-auto md:hidden navbtn" data-target="#navigation"
+                    onClick="toggleElement('navigation')">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <div id="navigation" class="hidden px-6 bg-white">
+        <div class="flex flex-col">
+            <a href="user-landing.html" class="px-3 py-2 text-gray-500 md:w-auto hover:underline hover:text-gray-700">
+                <span>Home</span>
+            </a>
+            <a href="products.html" class="px-3 py-2 text-gray-500 md:w-auto hover:underline hover:text-gray-700">
+                <span>Products</span>
+            </a>
+            <a href="aboutus.html" class="px-3 py-2 text-gray-500 md:w-auto hover:underline hover:text-gray-700">
+                <span>About Us</span>
+            </a>
+            <a href="contactus.html" class="px-3 py-2 text-gray-500 md:w-auto hover:underline hover:text-gray-700">
+                <span>Contact Us</span>
+            </a>
+            <a href="cart.html" class="px-3 py-2 text-gray-500 md:w-auto hover:underline hover:text-gray-700">
+                <span>Cart</span>
+            </a>
+            <a href="profile-settings.html"
+                class="px-3 py-2 text-gray-500 md:w-auto hover:underline hover:text-gray-700">
+                <span>Profile Settings</span>
+            </a>
+        </div>
+    </div>
+    <!--navbar-->
 
-        <!--mainContent-->
-        <div class="flex justify-center my-6">
+    <!--mainContent-->
+    <div class="flex items-center justify-center mt-10 lg:mt-20">
+        <div class="flex justify-center items-center w-full">
             <div class="flex flex-col w-full p-8 text-gray-800 bg-white shadow-lg pin-r pin-y md:w-4/5 lg:w-4/5">
                 <div class="flex-1">
                     <table class="w-full text-sm lg:text-base" cellspacing="0">
@@ -228,8 +226,9 @@
                 </div>
             </div>
         </div>
-
     </div>
+
+
 
     <script src="script.js"></script>
 </body>

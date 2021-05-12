@@ -11,71 +11,69 @@
 </head>
 
 <body class="bg-gray-200 bg-cover" style="font-family: Nunito;">
-    <div class="w-screen h-screen ">
-        <!--navbar-->
-        <nav
-            class="z-50 flex flex-row items-center justify-between w-screen px-6 py-3 bg-white md:py-6 md:px-20 lg:px-32">
-            <div class="flex justify-start space-x-10">
-                <a href="landing.html" class="flex flex-row items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                    <span class="hidden text-xl font-bold md:block">Logo</span>
-                </a>
-                <div class="flex items-center justify-center hidden space-x-10 md:block">
-                    <a href="landing.html" class="text-gray-500 hover:underline hover:text-gray-700">
-                        <span>Home</span>
-                    </a>
-                    <a href="productmanagement.html" class="text-gray-500 hover:underline hover:text-gray-700">
-                        <span>Products</span>
-                    </a>
-                    <a href="usermanagement.html" class="text-gray-500 hover:underline hover:text-gray-700">
-                        <span>Users</span>
-                    </a>
-                </div>
-            </div>
-            <div class="flex flex-wrap justify-end ">
-                <div class="hidden md:block">
-                    <a href="profile-settings.html" class="text-gray-500 hover:underline hover:text-gray-700">
-                        <span>Profile Settings</span>
-                    </a>
-                </div>
-                <div class="block md:hidden">
-                    <button class="flex block p-3 ml-auto md:hidden navbtn" data-target="#navigation"
-                        onClick="toggleElement('navigation')">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
-                                d="M4 6h16M4 12h16M4 18h16" />
-                        </svg>
-                    </button>
-                </div>
-            </div>
-        </nav>
-        <div id="navigation" class="hidden px-6 bg-white">
-            <div class="flex flex-col">
-                <a href="landing.html" class="px-3 py-2 text-gray-500 md:w-auto hover:underline hover:text-gray-700">
+    <!--navbar-->
+    <nav class="z-50 flex flex-row items-center justify-between w-screen px-6 py-3 bg-white md:py-6 md:px-20 lg:px-32">
+        <div class="flex justify-start space-x-10">
+            <a href="landing.html" class="flex flex-row items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <span class="hidden text-xl font-bold md:block">Logo</span>
+            </a>
+            <div class="flex items-center justify-center hidden space-x-10 md:block">
+                <a href="landing.html" class="text-gray-500 hover:underline hover:text-gray-700">
                     <span>Home</span>
                 </a>
-                <a href="productmanagement.html"
-                    class="px-3 py-2 text-gray-500 md:w-auto hover:underline hover:text-gray-700">
+                <a href="productmanagement.html" class="text-gray-500 hover:underline hover:text-gray-700">
                     <span>Products</span>
                 </a>
-                <a href="usermanagement.html"
-                    class="px-3 py-2 text-gray-500 md:w-auto hover:underline hover:text-gray-700">
+                <a href="usermanagement.html" class="text-gray-500 hover:underline hover:text-gray-700">
                     <span>Users</span>
-                </a>
-                <a href="profile-settings.html"
-                    class="px-3 py-2 text-gray-500 md:w-auto hover:underline hover:text-gray-700">
-                    <span>Profile Settings</span>
                 </a>
             </div>
         </div>
-        <!--/navbar-->
+        <div class="flex flex-wrap justify-end ">
+            <div class="hidden md:block">
+                <a href="profile-settings.html" class="text-gray-500 hover:underline hover:text-gray-700">
+                    <span>Profile Settings</span>
+                </a>
+            </div>
+            <div class="block md:hidden">
+                <button class="flex block p-3 ml-auto md:hidden navbtn" data-target="#navigation"
+                    onClick="toggleElement('navigation')">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <div id="navigation" class="hidden px-6 bg-white">
+        <div class="flex flex-col">
+            <a href="landing.html" class="px-3 py-2 text-gray-500 md:w-auto hover:underline hover:text-gray-700">
+                <span>Home</span>
+            </a>
+            <a href="productmanagement.html"
+                class="px-3 py-2 text-gray-500 md:w-auto hover:underline hover:text-gray-700">
+                <span>Products</span>
+            </a>
+            <a href="usermanagement.html" class="px-3 py-2 text-gray-500 md:w-auto hover:underline hover:text-gray-700">
+                <span>Users</span>
+            </a>
+            <a href="profile-settings.html"
+                class="px-3 py-2 text-gray-500 md:w-auto hover:underline hover:text-gray-700">
+                <span>Profile Settings</span>
+            </a>
+        </div>
+    </div>
+    <!--/navbar-->
 
-        <!--Main Content-->
+    <!--Main Content-->
+    <div class="flex items-center justify-center">
         <div class="flex flex-col items-center justify-center mt-6 md:mx-36">
             <div class="flex flex-row items-center justify-center p-6 mt-10">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="none" viewBox="0 0 24 24"
@@ -106,7 +104,7 @@
                         <textarea style="max-width:100%;" id="description" name="description" rows="4" cols="52"
                             class="px-2 bg-gray-200 border border-black rounded-md"></textarea>
                         <!-- <input id="description" type="password"
-                            class="w-full h-8 px-2 bg-gray-200 border border-black rounded-md " required /> -->
+                                class="w-full h-8 px-2 bg-gray-200 border border-black rounded-md " required /> -->
                     </div>
 
                     <div class="mt-4">
@@ -123,8 +121,8 @@
                 </form>
             </div>
         </div>
-
     </div>
+
     <script src="script.js"></script>
 </body>
 
