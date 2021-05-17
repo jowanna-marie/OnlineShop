@@ -39,7 +39,7 @@
         </div>
         <div class="flex flex-wrap justify-end space-x-6">
             <a href="cart.html" class="hidden md:block">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-500" fill="none" viewBox="0 0 24 24"
                     stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
@@ -88,43 +88,43 @@
     <!--navbar-->
 
     <!--mainContent-->
-    <div class="flex items-center justify-center">
-        <div
-            class="flex flex-col items-center justify-center w-full h-auto p-6 mt-20 bg-white md:rounded-lg md:mt-20 lg:mt-32 md:mx-20 lg:mx-32">
-            <h1 class="mb-10 text-5xl font-bold tracking-wider text-black">Shop Name</h1>
-            <div class="grid grid-cols-1 md:grid-cols-2">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 md:my-6" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                </svg>
-                <span class="self-start my-6 text-xl">+639-12-123-1234</span>
+    <div class="flex items-center justify-center text-gray-900">
+        <div class="flex items-center justify-center w-full mt-20 md:mt-32">
+            <div
+                class="flex flex-col w-full p-6 py-4 mt-6 overflow-hidden bg-white shadow-md sm:max-w-md md:rounded-2xl">
+                <span class="text-2xl font-bold">Questions?</span>
+                <span class="text-lg font-medium">Leave us a message</span>
+                <form action="/">
 
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 md:my-6" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                </svg>
-                <span class="self-start my-6 text-xl">shopname@email.com</span>
+                    <div class="mt-4">
+                        <label for="fullname" class="block text-lg ">Full Name</label>
+                        <input id="fullname" type="text"
+                            class="w-full h-8 px-2 bg-gray-100 border border-black rounded-md " required />
+                    </div>
 
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 md:my-6" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
-                </svg>
-                <span class="self-start my-6 text-xl">/ShopNamePage</span>
+                    <div class="mt-4">
+                        <label for="email" class="block text-lg ">Email</label>
+                        <input id="email" type="email"
+                            class="w-full h-8 px-2 bg-gray-100 border border-black rounded-md " required />
+                    </div>
 
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 md:my-6" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
-                </svg>
-                <span class="self-start my-6 text-xl">/ShopNamePage</span>
+                    <div class="mt-4">
+                        <label for="message" class="block text-lg ">Message</label>
+                        <textarea style="max-width:100%;" id="message" name="message" rows="4" cols="52"
+                            class="px-2 bg-gray-100 border border-black rounded-md"></textarea>
+                    </div>
+
+
+                    <div class="mt-4">
+                        <button type="submit"
+                            class="w-auto px-6 py-1 tracking-wider text-white bg-gray-800 border border-gray-900 rounded hover:bg-gray-700 hover:border-gray-800">Send</button>
+                    </div>
+
+                </form>
 
             </div>
         </div>
     </div>
-
 
 
     <script src="script.js"></script>

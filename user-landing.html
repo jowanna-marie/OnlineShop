@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.4/tailwind.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Shop Name</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.4/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
     <style>
         .work-sans {
             font-family: 'Work Sans', sans-serif;
@@ -94,7 +95,7 @@
         </div>
         <div class="flex flex-wrap justify-end space-x-3 lg:space-x-6">
             <a href="cart.html" class="hidden md:block">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-500" fill="none" viewBox="0 0 24 24"
                     stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
@@ -156,7 +157,7 @@
                         <div
                             class="flex flex-col items-center w-full px-6 tracking-wide lg:w-1/2 md:ml-16 md:items-start">
                             <p class="my-4 text-2xl text-black">Men's Shoes</p>
-                            <a class="inline-block text-xl leading-relaxed no-underline bg-white py-1 px-6 bg-opacity-80"
+                            <a class="inline-block px-6 py-1 text-xl leading-relaxed no-underline bg-white bg-opacity-80"
                                 href="view-item.html">view product</a>
                         </div>
                     </div>
@@ -178,7 +179,7 @@
                         <div
                             class="flex flex-col items-center w-full px-6 tracking-wide lg:w-1/2 md:ml-16 md:items-start">
                             <p class="my-4 text-2xl text-black">Men's Classic Clothe</p>
-                            <a class="inline-block text-xl leading-relaxed no-underline bg-white py-1 px-6 bg-opacity-80"
+                            <a class="inline-block px-6 py-1 text-xl leading-relaxed no-underline bg-white bg-opacity-80"
                                 href="view-item.html">view product</a>
                         </div>
                     </div>
@@ -200,7 +201,7 @@
                         <div
                             class="flex flex-col items-center w-full px-6 tracking-wide lg:w-1/2 md:ml-16 md:items-start">
                             <p class="my-4 text-2xl text-black">Smart Phone</p>
-                            <a class="inline-block text-xl leading-relaxed no-underline bg-white py-1 px-6 bg-opacity-80"
+                            <a class="inline-block px-6 py-1 text-xl leading-relaxed no-underline bg-white bg-opacity-80"
                                 href="view-item.html">view product</a>
                         </div>
                     </div>
@@ -216,107 +217,263 @@
             <ol class="carousel-indicators">
                 <li class="inline-block mr-3">
                     <label for="carousel-1"
-                        class="block text-4xl text-gray-400 cursor-pointer carousel-bullet hover:text-gray-900">•</label>
+                        class="block text-4xl text-white cursor-pointer carousel-bullet hover:text-black">•</label>
                 </li>
                 <li class="inline-block mr-3">
                     <label for="carousel-2"
-                        class="block text-4xl text-gray-400 cursor-pointer carousel-bullet hover:text-gray-900">•</label>
+                        class="block text-4xl text-white cursor-pointer carousel-bullet hover:text-black">•</label>
                 </li>
                 <li class="inline-block mr-3">
                     <label for="carousel-3"
-                        class="block text-4xl text-gray-400 cursor-pointer carousel-bullet hover:text-gray-900">•</label>
+                        class="block text-4xl text-white cursor-pointer carousel-bullet hover:text-black">•</label>
                 </li>
             </ol>
 
         </div>
     </div>
-    <!-- <div>
-
-            <div class="flex items-center justify-center mx-6 mt-6 md:mx-20 lg:mx-32 ">
-                <img src="shopbanner.jpg" alt="" class="w-full h-auto rounded md:rounded-lg">
-            </div> -->
 
     <div class="flex items-center justify-center mt-6 md:mx-32 ">
-        <h1 class="text-3xl font-bold text-gray-900">Featured Items</h1>
+        <h1 class="text-3xl font-bold tracking-widest text-gray-900">Best Sellers</h1>
     </div>
 
-    <div class="flex items-center justify-center py-6 md:mx-20 lg:mx-32">
-
-        <!--cards-->
-        <div class="grid grid-cols-1 lg:grid-cols-3 lg:gap-6 gap-3">
-
-            <div
-                class="w-64 overflow-hidden transition duration-200 transform bg-white rounded shadow md:w-72 my-54 hover:shadow-lg hover:-translate-y-2">
-                <img src="shoes.jpg" class="object-cover object-center w-full h-48">
-                <div class="flex flex-col w-full">
-                    <h3 class="w-full mt-1 text-lg font-bold text-center text-black cursor-default">Product
-                        Name
-                    </h3>
-                    <p class="p-3 pt-1 cursor-default">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Amet,
-                        alias?</p>
-                    <a href="products.html"
-                        class="flex items-center justify-center px-3 py-2 mx-6 mb-2 font-medium text-black bg-gray-400 rounded hover:bg-gray-600 focus:outline-none">
-                        Shop Now
-
-                        <svg xmlns="http://www.w3.org/2000/svg" class="block w-6 h-6 ml-3 md:hidden lg:block"
-                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                        </svg>
-                    </a>
+    <div class="flex items-center justify-center px-32">
+        <ul class="w-full lazy">
+            <li>
+                <div class="flex flex-col items-center justify-center max-w-lg mx-auto my-4 border-2 border-gray-200">
+                    <div style="background-image: url('air.jpg')" class="w-full h-64 bg-gray-300 bg-center bg-cover">
+                    </div>
+                    <div class="w-full -mt-10 overflow-hidden bg-white">
+                        <div class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase">
+                            Item Name
+                        </div>
+                        <p class="p-3 pt-1 cursor-default">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Amet,
+                            alias?</p>
+                        <div class="flex flex-col items-center justify-center px-3 py-2 bg-white">
+                            <h1 class="font-bold text-gray-800 ">₱59.99</h1>
+                            <a href="products.html"
+                                class="flex items-center justify-center w-full px-3 py-1 font-medium text-black bg-gray-400 rounded hover:bg-gray-600 focus:outline-none">
+                                Shop Now
+                                <svg xmlns="http://www.w3.org/2000/svg" class="block w-6 h-6 ml-3 md:hidden lg:block"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-
-            <div
-                class="w-64 overflow-hidden transition duration-200 transform bg-white rounded shadow md:w-72 my-54 hover:shadow-lg hover:-translate-y-2">
-                <img src="shoes.jpg" class="object-cover object-center w-full h-48">
-                <div class="flex flex-col w-full">
-                    <h3 class="w-full mt-1 text-lg font-bold text-center text-black cursor-default">Product
-                        Name
-                    </h3>
-                    <p class="p-3 pt-1 cursor-default">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Amet,
-                        alias?</p>
-                    <a href="products.html"
-                        class="flex items-center justify-center px-3 py-2 mx-6 mb-2 font-medium text-black bg-gray-400 rounded hover:bg-gray-600 focus:outline-none">
-                        Shop Now
-
-                        <svg xmlns="http://www.w3.org/2000/svg" class="block w-6 h-6 ml-3 md:hidden lg:block"
-                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                        </svg>
-                    </a>
+            </li>
+            <li>
+                <div class="flex flex-col items-center justify-center max-w-lg mx-auto my-4 border-2 border-gray-200">
+                    <div style="background-image: url('kd.jpg')" class="w-full h-64 bg-gray-300 bg-center bg-cover">
+                    </div>
+                    <div class="w-full -mt-10 overflow-hidden bg-white">
+                        <div class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase">
+                            Item Name
+                        </div>
+                        <p class="p-3 pt-1 cursor-default">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Amet,
+                            alias?</p>
+                        <div class="flex flex-col items-center justify-center px-3 py-2 bg-white">
+                            <h1 class="font-bold text-gray-800 ">₱59.99</h1>
+                            <a href="products.html"
+                                class="flex items-center justify-center w-full px-3 py-1 font-medium text-black bg-gray-400 rounded hover:bg-gray-600 focus:outline-none">
+                                Shop Now
+                                <svg xmlns="http://www.w3.org/2000/svg" class="block w-6 h-6 ml-3 md:hidden lg:block"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-
-            <div
-                class="w-64 overflow-hidden transition duration-200 transform bg-white rounded shadow md:w-72 my-54 hover:shadow-lg hover:-translate-y-2">
-                <img src="shoes.jpg" class="object-cover object-center w-full h-48">
-                <div class="flex flex-col w-full">
-                    <h3 class="w-full mt-1 text-lg font-bold text-center text-black cursor-default">Product
-                        Name
-                    </h3>
-                    <p class="p-3 pt-1 cursor-default">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Amet,
-                        alias?</p>
-                    <a href="products.html"
-                        class="flex items-center justify-center px-3 py-2 mx-6 mb-2 font-medium text-black bg-gray-400 rounded hover:bg-gray-600 focus:outline-none">
-                        Shop Now
-
-                        <svg xmlns="http://www.w3.org/2000/svg" class="block w-6 h-6 ml-3 md:hidden lg:block"
-                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                        </svg>
-                    </a>
+            </li>
+            <li>
+                <div class="flex flex-col items-center justify-center max-w-lg mx-auto my-4 border-2 border-gray-200">
+                    <div style="background-image: url('kyrie6.jpg')" class="w-full h-64 bg-gray-300 bg-center bg-cover">
+                    </div>
+                    <div class="w-full -mt-10 overflow-hidden bg-white">
+                        <div class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase">
+                            Item Name
+                        </div>
+                        <p class="p-3 pt-1 cursor-default">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Amet,
+                            alias?</p>
+                        <div class="flex flex-col items-center justify-center px-3 py-2 bg-white">
+                            <h1 class="font-bold text-gray-800 ">₱59.99</h1>
+                            <a href="products.html"
+                                class="flex items-center justify-center w-full px-3 py-1 font-medium text-black bg-gray-400 rounded hover:bg-gray-600 focus:outline-none">
+                                Shop Now
+                                <svg xmlns="http://www.w3.org/2000/svg" class="block w-6 h-6 ml-3 md:hidden lg:block"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-
+            </li>
+            <li>
+                <div class="flex flex-col items-center justify-center max-w-lg mx-auto my-4 border-2 border-gray-200">
+                    <div style="background-image: url('kyrieconcept.jpg')"
+                        class="w-full h-64 bg-gray-300 bg-center bg-cover">
+                    </div>
+                    <div class="w-full -mt-10 overflow-hidden bg-white">
+                        <div class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase">
+                            Item Name
+                        </div>
+                        <p class="p-3 pt-1 cursor-default">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Amet,
+                            alias?</p>
+                        <div class="flex flex-col items-center justify-center px-3 py-2 bg-white">
+                            <h1 class="font-bold text-gray-800 ">₱59.99</h1>
+                            <a href="products.html"
+                                class="flex items-center justify-center w-full px-3 py-1 font-medium text-black bg-gray-400 rounded hover:bg-gray-600 focus:outline-none">
+                                Shop Now
+                                <svg xmlns="http://www.w3.org/2000/svg" class="block w-6 h-6 ml-3 md:hidden lg:block"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="flex flex-col items-center justify-center max-w-lg mx-auto my-4 border-2 border-gray-200">
+                    <div style="background-image: url('lj.jpg')" class="w-full h-64 bg-gray-300 bg-center bg-cover">
+                    </div>
+                    <div class="w-full -mt-10 overflow-hidden bg-white">
+                        <div class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase">
+                            Item Name
+                        </div>
+                        <p class="p-3 pt-1 cursor-default">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Amet,
+                            alias?</p>
+                        <div class="flex flex-col items-center justify-center px-3 py-2 bg-white">
+                            <h1 class="font-bold text-gray-800 ">₱59.99</h1>
+                            <a href="products.html"
+                                class="flex items-center justify-center w-full px-3 py-1 font-medium text-black bg-gray-400 rounded hover:bg-gray-600 focus:outline-none">
+                                Shop Now
+                                <svg xmlns="http://www.w3.org/2000/svg" class="block w-6 h-6 ml-3 md:hidden lg:block"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="flex flex-col items-center justify-center max-w-lg mx-auto my-4 border-2 border-gray-200">
+                    <div style="background-image: url('zfreak2.jpg')"
+                        class="w-full h-64 bg-gray-300 bg-center bg-cover">
+                    </div>
+                    <div class="w-full -mt-10 overflow-hidden bg-white">
+                        <div class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase">
+                            Item Name
+                        </div>
+                        <p class="p-3 pt-1 cursor-default">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Amet,
+                            alias?</p>
+                        <div class="flex flex-col items-center justify-center px-3 py-2 bg-white">
+                            <h1 class="font-bold text-gray-800 ">₱59.99</h1>
+                            <a href="products.html"
+                                class="flex items-center justify-center w-full px-3 py-1 font-medium text-black bg-gray-400 rounded hover:bg-gray-600 focus:outline-none">
+                                Shop Now
+                                <svg xmlns="http://www.w3.org/2000/svg" class="block w-6 h-6 ml-3 md:hidden lg:block"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="flex flex-col items-center justify-center max-w-lg mx-auto my-4 border-2 border-gray-200">
+                    <div style="background-image: url('kyriefly.jpg')"
+                        class="w-full h-64 bg-gray-300 bg-center bg-cover">
+                    </div>
+                    <div class="w-full -mt-10 overflow-hidden bg-white">
+                        <div class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase">
+                            Item Name
+                        </div>
+                        <p class="p-3 pt-1 cursor-default">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Amet,
+                            alias?</p>
+                        <div class="flex flex-col items-center justify-center px-3 py-2 bg-white">
+                            <h1 class="font-bold text-gray-800 ">₱59.99</h1>
+                            <a href="products.html"
+                                class="flex items-center justify-center w-full px-3 py-1 font-medium text-black bg-gray-400 rounded hover:bg-gray-600 focus:outline-none">
+                                Shop Now
+                                <svg xmlns="http://www.w3.org/2000/svg" class="block w-6 h-6 ml-3 md:hidden lg:block"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
     </div>
+
+
     <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script type="text/javascript">
+        $('.lazy').slick({
+            lazyLoad: 'ondemand',
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            infinite: true,
+            autoplay: true,
+            autoplaySpeed: 5000,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        autoplay: true,
+                        autoplaySpeed: 5000,
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        autoplay: true,
+                        autoplaySpeed: 5000,
+                    }
+                },
+                {
+                    breakpoint: 640,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        autoplay: true,
+                        autoplaySpeed: 5000,
+                    }
+                }
+            ]
+        });
+    </script>
 </body>
 
 </html>

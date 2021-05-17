@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.4/tailwind.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Shop Name</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.4/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
 </head>
 
 <body class="antialiased bg-gray-200 bg-cover" style="font-family: Nunito;">
     <!--Navbar-->
-    <nav class="z-50 flex flex-row items-center justify-between w-screen px-6 py-3 bg-white md:py-6 md:px-20 lg:px-32">
+    <nav class="flex flex-row items-center justify-between w-screen px-6 py-3 bg-white md:py-6 md:px-20 lg:px-32">
         <div class="flex justify-start md:space-x-3 lg:space-x-10">
             <a href="user-landing.html" class="flex flex-row items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
@@ -38,7 +39,7 @@
             </div>
         </div>
         <div class="flex flex-wrap justify-end space-x-6">
-            <a href="cart.html" class="hidden md:block">
+            <a href="cart.html" class="hidden text-gray-500 md:block">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
                     stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -90,29 +91,261 @@
     <!--mainContent-->
     <div class="flex items-center justify-center">
         <div
-            class="flex flex-col items-center justify-center w-full h-auto p-6 my-10 bg-white md:20 lg:mt-32 md:rounded-lg md:mx-20 lg:mx-32">
-            <h1 class="text-5xl font-bold tracking-wider text-black">Shop Name</h1>
-            <span class="mt-6 text-lg md:mx-6 lg:mx-16 text-justify">
+            class="flex flex-col items-center justify-center w-full h-auto p-6 my-10 mt-20 bg-white md:20 md:rounded-lg md:mx-20 lg:mx-32">
+            <div class="my-4 ">
+                <h1 class="text-5xl font-bold tracking-wider">Shop Name</h1>
+            </div>
+            <span class="mt-6 text-lg text-justify md:mx-6 lg:mx-16">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                 et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                 aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
                 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                culpa qui officia deserunt mollit anim id est laborum.
             </span>
         </div>
+    </div>
+    <div class="flex items-center justify-center px-32">
+        <ul class="w-full lazy">
+            <li>
+                <div class="flex flex-col items-center justify-center max-w-lg mx-auto my-4 border-2 border-gray-200">
+                    <div style="background-image: url('shoes.jpg')" class="w-full h-64 bg-gray-300 bg-center bg-cover">
+                    </div>
+                    <div class="w-full -mt-10 overflow-hidden bg-white">
+                        <div class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase">
+                            Item Name
+                        </div>
+                        <div class="flex items-center justify-between px-3 py-2 bg-gray-400">
+                            <h1 class="font-bold text-gray-800 ">₱59.99</h1>
+                            <a href="view-item.html"
+                                class="px-2 py-1 text-xs font-semibold text-white uppercase bg-gray-800 rounded hover:bg-gray-700">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="flex flex-col items-center justify-center max-w-lg mx-auto my-4 border-2 border-gray-200">
+                    <div style="background-image: url('air.jpg')" class="w-full h-64 bg-gray-300 bg-center bg-cover">
+                    </div>
+                    <div class="w-full -mt-10 overflow-hidden bg-white">
+                        <div class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase">
+                            Item Name
+                        </div>
+                        <div class="flex items-center justify-between px-3 py-2 bg-gray-400">
+                            <h1 class="font-bold text-gray-800 ">₱59.99</h1>
+                            <a href="view-item.html"
+                                class="px-2 py-1 text-xs font-semibold text-white uppercase bg-gray-800 rounded hover:bg-gray-700">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="flex flex-col items-center justify-center max-w-lg mx-auto my-4 border-2 border-gray-200">
+                    <div style="background-image: url('kyriefly.jpg')"
+                        class="w-full h-64 bg-gray-300 bg-center bg-cover">
+                    </div>
+                    <div class="w-full -mt-10 overflow-hidden bg-white">
+                        <div class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase">
+                            Item Name
+                        </div>
+                        <div class="flex items-center justify-between px-3 py-2 bg-gray-400">
+                            <h1 class="font-bold text-gray-800 ">₱59.99</h1>
+                            <a href="view-item.html"
+                                class="px-2 py-1 text-xs font-semibold text-white uppercase bg-gray-800 rounded hover:bg-gray-700">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="flex flex-col items-center justify-center max-w-lg mx-auto my-4 border-2 border-gray-200">
+                    <div style="background-image: url('kyrieconcept.jpg')"
+                        class="w-full h-64 bg-gray-300 bg-center bg-cover">
+                    </div>
+                    <div class="w-full -mt-10 overflow-hidden bg-white">
+                        <div class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase">
+                            Item Name
+                        </div>
+                        <div class="flex items-center justify-between px-3 py-2 bg-gray-400">
+                            <h1 class="font-bold text-gray-800 ">₱59.99</h1>
+                            <a href="view-item.html"
+                                class="px-2 py-1 text-xs font-semibold text-white uppercase bg-gray-800 rounded hover:bg-gray-700">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="flex flex-col items-center justify-center max-w-lg mx-auto my-4 border-2 border-gray-200">
+                    <div style="background-image: url('zfreak2.jpg')"
+                        class="w-full h-64 bg-gray-300 bg-center bg-cover">
+                    </div>
+                    <div class="w-full -mt-10 overflow-hidden bg-white">
+                        <div class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase">
+                            Item Name
+                        </div>
+                        <div class="flex items-center justify-between px-3 py-2 bg-gray-400">
+                            <h1 class="font-bold text-gray-800 ">₱59.99</h1>
+                            <a href="view-item.html"
+                                class="px-2 py-1 text-xs font-semibold text-white uppercase bg-gray-800 rounded hover:bg-gray-700">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="flex flex-col items-center justify-center max-w-lg mx-auto my-4 border-2 border-gray-200">
+                    <div style="background-image: url('lj.jpg')" class="w-full h-64 bg-gray-300 bg-center bg-cover">
+                    </div>
+                    <div class="w-full -mt-10 overflow-hidden bg-white">
+                        <div class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase">
+                            Item Name
+                        </div>
+                        <div class="flex items-center justify-between px-3 py-2 bg-gray-400">
+                            <h1 class="font-bold text-gray-800 ">₱59.99</h1>
+                            <a href="view-item.html"
+                                class="px-2 py-1 text-xs font-semibold text-white uppercase bg-gray-800 rounded hover:bg-gray-700">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="flex flex-col items-center justify-center max-w-lg mx-auto my-4 border-2 border-gray-200">
+                    <div style="background-image: url('kd.jpg')" class="w-full h-64 bg-gray-300 bg-center bg-cover">
+                    </div>
+                    <div class="w-full -mt-10 overflow-hidden bg-white">
+                        <div class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase">
+                            Item Name
+                        </div>
+                        <div class="flex items-center justify-between px-3 py-2 bg-gray-400">
+                            <h1 class="font-bold text-gray-800 ">₱59.99</h1>
+                            <a href="view-item.html"
+                                class="px-2 py-1 text-xs font-semibold text-white uppercase bg-gray-800 rounded hover:bg-gray-700">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="flex flex-col items-center justify-center max-w-lg mx-auto my-4 border-2 border-gray-200">
+                    <div style="background-image: url('kyrie6.jpg')" class="w-full h-64 bg-gray-300 bg-center bg-cover">
+                    </div>
+                    <div class="w-full -mt-10 overflow-hidden bg-white">
+                        <div class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase">
+                            Item Name
+                        </div>
+                        <div class="flex items-center justify-between px-3 py-2 bg-gray-400">
+                            <h1 class="font-bold text-gray-800 ">₱59.99</h1>
+                            <a href="view-item.html"
+                                class="px-2 py-1 text-xs font-semibold text-white uppercase bg-gray-800 rounded hover:bg-gray-700">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+        </ul>
     </div>
 
 
     <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script type="text/javascript">
+        $('.lazy').slick({
+            lazyLoad: 'ondemand',
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            infinite: true,
+            autoplay: true,
+            autoplaySpeed: 5000,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        autoplay: true,
+                        autoplaySpeed: 5000,
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        autoplay: true,
+                        autoplaySpeed: 5000,
+                    }
+                },
+                {
+                    breakpoint: 640,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        autoplay: true,
+                        autoplaySpeed: 5000,
+                    }
+                }
+            ]
+        });
+    </script>
+
 </body>
 
 </html>
